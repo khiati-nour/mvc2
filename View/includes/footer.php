@@ -1,4 +1,4 @@
-    <footer>
+    <footer class="jumbotron">
         &copy; BeCode <?php echo date('Y')?>
     </footer>
 </body>
