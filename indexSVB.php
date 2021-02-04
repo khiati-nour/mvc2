@@ -1,11 +1,14 @@
 <?php
 
 //include all your model files here
+require_once 'Model/Books.php';
 require 'Controller/setup.php';
+
 include 'Controller/collectionController.php';
 include 'Controller/SigneController.php';
-
 require 'Model/User.php';
+
+
 
 //include all your controllers here
 
@@ -32,6 +35,10 @@ session_start();
 
 if(isset($_GET['page']) && $_GET['page'] === 'collection') {
     $controller = new collectionController();
+    $databaseManager = new DatabaseManager("localhost", 3306, "root","");
+
+
+
 }else{
     $controller = new SigneController();
 }
