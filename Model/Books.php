@@ -25,10 +25,8 @@ class Books
         $sql= "INSERT INTO books (isbn, title, author, genre, language, pages, published)
                 VALUES (:isbn, :title, :author, :genre, :language, :pages, :published);";
         // $pdo_options[PDO::ATTR_EMULATE_PREPARES] = true;
-
-
+        $this->databaseManager->database->prepare($sql)->execute($bookData);
         $idUser = $_SESSION['idUser'];
-
         $userBook =[
             'user_id' => $idUser,
             'isbn' => $isbn,
@@ -41,14 +39,21 @@ class Books
 
     public function getCollection()
     {
+
         $sql = "SELECT * FROM books";
-        $statement = $this->databaseManager->database->prepare($sql);
-        $statement->execute();
+        $stmt = $this->databaseManager->database->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function find()
+    {   $search = $_POST['search_input'];
+        $sql = "SELECT * FROM books WHERE title ='$search'";
+        $stmt = $this->databaseManager->database->prepare($sql);
+         $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);}
 
 
 
 
 }
-
