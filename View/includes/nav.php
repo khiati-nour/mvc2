@@ -11,7 +11,7 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Your Bookieshelf</a>
+                    <a href="../collection.php" class="nav-link">Your Bookieshelf</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">User</a>
