@@ -94,11 +94,11 @@ Anything complex should be calculated in the model -->
                             <td><?php echo $searched_book["pages"]; ?></td>
                             <td><?php echo $searched_book["published"]; ?></td>
 
-                            <td><input type="submit" name="borrow" class="btn btn-success" value="Borrow This Book"
-                                    style="width:auto" <?php $_SESSION['isbn']= $searched_book["isbn"];?>>
+                            <td><input type="submit"  name="borrow" class="btn btn-success" value="Borrow This Book"
+                                    style="width:auto" >
                             </td>
 
-
+                            <?php $_SESSION['isbn']= $searched_book["isbn"] ;?>
 
                         </tr>
                         <?php endforeach; ?>

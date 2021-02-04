@@ -62,7 +62,7 @@ class Books
             'user_id' => $idUser,
             'isbn' => $isbn,
         ];
-        $sql= "INSERT INTO borrow_service (user_id_borrow, book_isbn)
+        $sql= "INSERT INTO borrow_service (user_id_borrow, book_isbn )
         VALUES (:user_id, :isbn);";
         // $pdo_options[PDO::ATTR_EMULATE_PREPARES] = true;
         $this->databaseManager->database->prepare($sql)->execute($borrowBook);
