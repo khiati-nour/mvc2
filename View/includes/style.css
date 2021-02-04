@@ -28,7 +28,7 @@
 }
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .content{
     display: flex;
@@ -70,4 +70,8 @@
 }
 .navcolor {
     background: #EAE7DC;
+}
+.footerAlign {
+    text-align: center;
+    
 }
