@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/GoogleAPIclientSVB/vendor/ralouphie/getallheaders" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

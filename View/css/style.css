@@ -1,0 +1,83 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,200;1,900&display=swap');
+
+
+* {box-sizing: border-box;}
+
+
+
+
+/* Media queries responsiveness */
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 576px) {
+    
+}
+
+
+/* Style the input container */
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+/* Navigation styling */
+.navcolor {
+    background: #EAE7DC;
+}
+.navlogo {
+width: 35px;
+height: auto;
+}
+.logolink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.classlogoname{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: extra-light;
+    font-style: italic;
+    font-size: 34pt;
+    color: #e98074;
+    margin-left: 2vw;
+}
+
+/* Style the input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
