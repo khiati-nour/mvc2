@@ -1,20 +1,76 @@
 <?php require 'includes/header.php';?>
 <!-- this is the view, try to put only simple if's and loops here.
 Anything complex should be calculated in the model -->
+    <form method="post">
+        <div class="input-group">
+            <div class="form-outline">
+                <input type="search" name="search_input" value="" placeholder="Search" id="form1" class="form-control" />
+
+            </div>
+
+            <button type="submit" name="search" class="btn btn-primary"> search </button>
+
+        </div>
+    </form>
+    <fieldset>
+
+    <table class = "table"  >
+        <thread>
+            <tr>
+                <th>ISBN</th>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>Genre</th>
+                <th>Language</th>
+                <th>Pages</th>
+                <th>Published</th>
+                <th colspan="1">Action</th>
+            </tr>
+        </thread>
+
+
+        <?php
+        if (is_array($searched_books) || is_object($searched_books)):?>
+            <?php foreach ($searched_books as $searched_book):?>
+                <tr>
+                    <td><?php echo $searched_book["isbn"]; ?></td>
+                    <td><?php echo $searched_book["title"]; ?></td>
+                    <td><?php echo $searched_book["author"]; ?></td>
+                    <td><?php echo $searched_book["genre"]; ?></td>
+                    <td><?php echo $searched_book["language"]; ?></td>
+                    <td><?php echo $searched_book["pages"]; ?></td>
+                    <td><?php echo $searched_book["published"]; ?></td>
+
+                    <td><a class="btn btn-primary" href="edit.php?edit=<?php echo $searched_book['id'];?>">Borrow This Book</a>
+                    </td>
+
+
+
+                </tr>
+            <?php endforeach; ?>
+
+        <?php endif; ?>
+    </table>
 <fieldset>
     <h2>Your book collection</h2>
     <table class = "table">
         <thread>
             <tr>
-                <th>Name</th>
-                <th>Rarity</th>
-                <th>Type</th>
+                <th>ISBN</th>
+                <th>TITLE</th>
+                <th>AUTHOR</th>
+                <th>Genre</th>
+                <th>Language</th>
+                <th>Pages</th>
+                <th>Published</th>
                 <th colspan="2">Action</th>
             </tr>
         </thread>
-        <?php
 
-        foreach ($bookies as $booky):?>
+
+        <?php
+        if (is_array($bookies) || is_object($bookies)):?>
+       <?php foreach ($bookies as $booky):?>
             <tr>
                 <td><?php echo $booky["isbn"]; ?></td>
                 <td><?php echo $booky["title"]; ?></td>
@@ -24,16 +80,18 @@ Anything complex should be calculated in the model -->
                 <td><?php echo $booky["pages"]; ?></td>
                 <td><?php echo $booky["published"]; ?></td>
 
-                <td><a class="btn btn-primary" href="edit.php?edit=<?php echo $card['id'];?>">Edit</a>
-                    <a class = "btn btn-danger" href="delete.php?delete=<?php echo $card['id'];?>">Delete</a>
+                <td><a class="btn btn-primary" href="edit.php?edit=<?php echo $booky['id'];?>">Borrow This Book</a>
+
                 </td>
 
 
 
             </tr>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
 
+            <?php endif; ?>
     </table>
+
     <form action="" method="post">
         <label for="submit">Add a book to your collection</label> <br>
         <div class="input-group">
