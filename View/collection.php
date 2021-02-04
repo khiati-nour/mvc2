@@ -1,6 +1,8 @@
 <?php require 'includes/header.php';?>
 <!-- this is the view, try to put only simple if's and loops here.
 Anything complex should be calculated in the model -->
+<!-- Navigation -->
+<?php include 'includes/nav.php'; ?>
     <form method="post">
         <div class="input-group">
             <div class="form-outline">
