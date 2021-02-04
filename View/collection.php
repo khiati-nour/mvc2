@@ -1,4 +1,5 @@
 <?php require 'includes/header.php';?>
+<?php require 'includes/nav.php';?>
 <!-- this is the view, try to put only simple if's and loops here.
 Anything complex should be calculated in the model -->
 <div class="container">
@@ -41,6 +42,17 @@ Anything complex should be calculated in the model -->
     </div>
 
     <div class="books">
+        <form method="post">
+            <div class="input-group">
+                <div class="form-outline">
+                    <input type="search" name="search_input" value="" placeholder="Search" id="form1" class="form-control" />
+
+                </div>
+
+                <button type="submit" name="search" class="btn btn-primary"> search </button>
+
+            </div>
+        </form>
     <form method="post">
         <div class="input-group">
             <div class="form-outline">

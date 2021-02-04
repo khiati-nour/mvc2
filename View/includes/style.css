@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,200;1,900&display=swap');
+
+/* Navigation styling */
+.navcolor {
+    background: #EAE7DC;
+}
+.navlogo {
+    width: 35px;
+    height: auto;
+}
+.logolink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.classlogoname{
+    font-family: 'Montserrat', sans-serif;
+
+    font-style: italic;
+    font-size: 34pt;
+    color: #e98074;
+    margin-left: 2vw;
+}
+.user-profile .user-profile-card {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.user{
+    padding: 0px;
+    margin: 0;
+}
+.books{
+    padding:50px;
+}
+.user-profile-card .user-profile-header {
+    background: url("http://lorempixel.com/850/280/nature/4/");
+    background-size: cover;
+    height: 135px;
+}
+
+.user-profile-card .user-profile-avatar {
+    position: relative;
+    top: -100px;
+    margin-bottom: -100px;
+    padding: 0 15px;
+}
+
+.user-profile-card .user-profile-avatar img {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.5);
+}
+
+.user-profile small {
+    display: block;
+    line-height: 1.428571429;
+    color: #999;
+}
+.navcolor {
+    background: #EAE7DC;
+}
