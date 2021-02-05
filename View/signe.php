@@ -11,6 +11,8 @@
 <style>
     body {
         padding-top: 90px;
+        background-image: url(../assets/libraryMood.jpg);
+        background-size: cover;
     }
     .panel-login {
         border-color: #ccc;
@@ -20,7 +22,7 @@
     }
     .panel-login>.panel-heading {
         color: #00415d;
-        background-color: #fff;
+        background-color: #EAE7DC;
         border-color: #fff;
         text-align:center;
     }
@@ -34,7 +36,7 @@
         transition: all 0.1s linear;
     }
     .panel-login>.panel-heading a.active{
-        color: #029f5b;
+        color: #E98074;
         font-size: 18px;
     }
     .panel-login>.panel-heading hr{
@@ -56,6 +58,12 @@
         -moz-transition: all 0.1s linear;
         transition: all 0.1s linear;
     }
+    .panel-body {
+        background-color: #EAE7DC;
+    }
+    .panel {
+        background-color: #EAE7DC;
+    }
     .panel-login input:hover,
     .panel-login input:focus {
         outline:none;
@@ -65,21 +73,21 @@
         border-color: #ccc;
     }
     .btn-login {
-        background-color: #59B2E0;
+        background-color: #E85A50;
         outline: none;
-        color: #fff;
+        color:#fff;
         font-size: 14px;
         height: auto;
         font-weight: normal;
         padding: 14px 0;
         text-transform: uppercase;
-        border-color: #59B2E6;
+        border-color: #E85A50;
     }
     .btn-login:hover,
     .btn-login:focus {
         color: #fff;
-        background-color: #53A3CD;
-        border-color: #53A3CD;
+        background-color: #E68173;
+        border-color: #E85A50;
     }
     .forgot-password {
         text-decoration: underline;
@@ -92,7 +100,7 @@
     }
 
     .btn-register {
-        background-color: #1CB94E;
+        background-color: #E85A50;
         outline: none;
         color: #fff;
         font-size: 14px;
@@ -100,13 +108,13 @@
         font-weight: normal;
         padding: 14px 0;
         text-transform: uppercase;
-        border-color: #1CB94A;
+        border-color: #E85A50;
     }
     .btn-register:hover,
     .btn-register:focus {
         color: #fff;
-        background-color: #1CA347;
-        border-color: #1CA347;
+        background-color: #E68173;
+        border-color: #E85A50;
     }
 
     .error {color: #FF0000;}

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,200;1,900&display=swap');
 
 /* Navigation styling */
@@ -28,7 +29,7 @@
 }
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 .content{
     display: flex;
@@ -71,3 +72,8 @@
 .navcolor {
     background: #EAE7DC;
 }
+.footerAlign {
+    text-align: center;
+    background-color: #EAE7DC;
+color: #e98074;}
+
